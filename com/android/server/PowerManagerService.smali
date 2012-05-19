@@ -2150,6 +2150,16 @@
     goto :goto_e
 .end method
 
+.method static synthetic getContextZZ(Lcom/android/server/PowerManagerService;)Landroid/content/Context;
+        .registers 2
+        .parameter "x0"
+
+        .prologue
+        iget-object v0, p0, Lcom/android/server/PowerManagerService;->mContext:Landroid/content/Context;
+
+        return-object v0
+.end method
+
 .method private getPreferredBrightness()I
     .registers 5
 
